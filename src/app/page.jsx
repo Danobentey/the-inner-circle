@@ -1,7 +1,7 @@
 import Button from "./components/Button";
 import Productcard from "./components/Productcard";
 import "./style.css";
-import {} from "banner"
+// import {} from "banner"
 
 export default function Home() {
   const services = [
