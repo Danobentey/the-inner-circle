@@ -3,6 +3,21 @@
   --duration-double: 10s;
 }
 
+/* .hero_image {
+  width: 400px !important;
+  display: block;
+
+} */
+
+section > h2::before {
+  content: url(./images/icons/star.png);
+  padding: 5px 5px 0 0;
+
+}
+section > h2 {
+  display: flex;
+  align-items: center;
+}
 .container {
   width: 100%;
   background: #111;

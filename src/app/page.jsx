@@ -1,30 +1,32 @@
+import Image from "next/image";
 import Button from "./components/Button";
 import Productcard from "./components/Productcard";
 import "./style.css";
+import ICONS from "./images/icons";
 // import {} from "banner"
 
 export default function Home() {
   const services = [
     {
-      src: "",
+      src: ICONS.crown.src,
       title: "Mentorship",
       desciption:
         "Gain invaluable insights from Ivy League and Fortune 500 guest speakers, paired with personalized mentorship to guide your path.",
     },
     {
-      src: "",
+      src: ICONS.plane.src,
       title: "Launch a Business",
       desciption:
         "Equipped with the right tools and resources, you'll bring your startup from concept to creation, ready to enter the market.",
     },
     {
-      src: "",
+      src: ICONS.rocket.src,
       title: "Career Preparation",
       desciption:
         "Dive into a variety of disciplines, gaining exposure that helps crystallize your future career aspirations.",
     },
     {
-      src: "",
+      src: ICONS.globe.src,
       title: "Community",
       desciption:
         "Join a like-minded community of highly motivated individuals, fostering connections that propel your personal and professional growth.",
@@ -79,13 +81,14 @@ export default function Home() {
         </div>
       </header>
 
-      <section className="mt-[90px] mb-16 mx-auto w-[90%] h-[590px] border-solid bg-gray-400  rounded-tl-[290px] rounded-bl-[50px] rounded-br-[290px] rounded-tr-[50px]">
-        <video src=""></video>
-      </section>
+    <section>
+      <div className="mt-[90px] mb-16 mx-auto w-[90%] h-[590px]">
+        <img src={ICONS.main_hero.src} alt="main" className="rounded-tl-[290px] rounded-bl-[50px] rounded-tr-[50px] rounded-br-[290px] mx-auto"  />
+      </div>
+    </section>
 
       <section className="rounded-3xl flex-2 bg-gray-500 p-5">
-        <h2 className="flex items-center mb-8">
-          <img src="" alt="star" />
+        <h2 className="mb-8">
           OUR PROGRAM
         </h2>
         <h1 className="text-4xl mx-3 mb-8 max-w-[22ch]">
@@ -144,7 +147,7 @@ export default function Home() {
         <h1 className="text-4xl mb-8 mt-8 max-w-[25ch]">
           Our Program is backed by the best.
         </h1>
-        <p lassName="text-xs mt-8">
+        <p className="text-xs mt-8">
           We have a dynamic network of companies and schools that support our
           mission.
         </p>
